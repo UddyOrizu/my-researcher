@@ -1,0 +1,17 @@
+beautifulsoup4
+flask
+flask_cors
+litellm
+gunicorn
+requests
+fast-graphrag
+aiohttp
+duckduckgo_search
+pymupdf  # PyMuPDF for PDF handling
+pytesseract
+Pillow   # for image handling
+pyyaml
+extract-msg
+chromadb 
+torch
+azure-storage-blob

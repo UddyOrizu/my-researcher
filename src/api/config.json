@@ -1,0 +1,13 @@
+{
+    "DOMAINS_ALLOW": ["http://localhost:3000"],
+    "AZURE_API_KEY":"",
+    "AZURE_API_BASE":"",
+    "AZURE_API_VERSION":"",
+    "AZURE_MODEL_DEPLOYMENT":"",
+    "TAVILY_AI_KEY":"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",
+    "monte_carlo_search":true,
+    "monte_carlo_samples":3,
+    "min_relevance":0.5,
+    "web_search_limit":5,
+    "max_query_length":200
+}
