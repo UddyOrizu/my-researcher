@@ -431,33 +431,33 @@ class SearchSession:
 
         # Construct final prompt
         aggregation_prompt = f"""
-You are an expert research analyst. Using all of the data provided below, produce a comprehensive, advanced report of at least 3000 words on the topic. 
-The report should include:
-1) A detailed Table of Contents (based on the search branches), 
-2) Multiple sections, 
-3) In-depth analysis with citations,
-4) A final reference section listing all relevant URLs.
+            You are an expert research analyst. Using all of the data provided below, produce a comprehensive, advanced report of at least 3000 words on the topic. 
+            The report should include:
+            1) A detailed Table of Contents (based on the search branches), 
+            2) Multiple sections, 
+            3) In-depth analysis with citations,
+            4) A final reference section listing all relevant URLs.
 
-User Query: {self.enhanced_query}
+            User Query: {self.enhanced_query}
 
-Table of Contents:
-{toc_str}
+            Table of Contents:
+            {toc_str}
 
-Summarized Web Results:
-{summarized_web}
+            Summarized Web Results:
+            {summarized_web}
 
-Summarized Local Document Results:
-{summarized_local}
+            Summarized Local Document Results:
+            {summarized_local}
 
-Reference Links (unique URLs found):
-{reference_links}
+            Reference Links (unique URLs found):
+            {reference_links}
 
-Additionally, incorporate any previously gathered information if available. 
-Provide a thorough discussion covering background, current findings, challenges, and future directions.
-Write the report in clear Markdown with section headings, subheadings, and references.
+            Additionally, incorporate any previously gathered information if available. 
+            Provide a thorough discussion covering background, current findings, challenges, and future directions.
+            Write the report in clear Markdown with section headings, subheadings, and references.
 
-Report:
-"""
+            Report:
+            """
         print("[DEBUG] Final RAG prompt constructed. Passing to rag_final_answer()...")
         final_answer = rag_final_answer(aggregation_prompt, rag_model=self.rag_model, personality=self.personality)
         return final_answer
